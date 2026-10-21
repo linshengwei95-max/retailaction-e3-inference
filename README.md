@@ -49,6 +49,10 @@ docker run --rm --network none --shm-size 2g \
 
 Without Docker: Python 3.11 or newer, `torch`, `torchvision`, `numpy` and `av==16.0.1`, then `python -B infer.py --data-root ... --template ... --output ...`.
 
+## Getting the weights
+
+The weights file is stored with Git LFS. Install Git LFS (`git lfs install`) before cloning, or run `git lfs pull` afterwards. Without it the file is a ~130-byte text pointer and `infer.py` stops with `WEIGHTS_SHA256_MISMATCH`. After cloning, `sha256sum -c SHA256SUMS.txt` should report every file as OK.
+
 ## What the program does
 
 1. Checks the SHA-256 of the weights and of the template.
