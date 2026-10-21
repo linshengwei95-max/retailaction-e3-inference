@@ -53,6 +53,8 @@ Without Docker: Python 3.11 or newer, `torch`, `torchvision`, `numpy` and `av==1
 
 The weights file is stored with Git LFS. Install Git LFS (`git lfs install`) before cloning, or run `git lfs pull` afterwards. Without it the file is a ~130-byte text pointer and `infer.py` stops with `WEIGHTS_SHA256_MISMATCH`. After cloning, `sha256sum -c SHA256SUMS.txt` should report every file as OK.
 
+Git LFS bandwidth on a free GitHub account is limited. The same file is attached to the release 1.0: https://github.com/linshengwei95-max/retailaction-e3-inference/releases/download/v1.0/e3_model_state.pt . Download it into weights/e3_model_state.pt if the LFS download fails; its SHA-256 must be 4b4c816268984dc86e9bd8f3aaaa44f0216d1ec8ba306f3a8fc60f7009dfce2e.
+
 ## What the program does
 
 1. Checks the SHA-256 of the weights and of the template.
