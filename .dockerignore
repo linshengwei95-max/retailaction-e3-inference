@@ -1,0 +1,4 @@
+*.md
+*.log
+outputs/
+__pycache__/

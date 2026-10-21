@@ -1,0 +1,4 @@
+Copyright 2026 Linsheng Wei (Communication University of China)
+
+This product contains model weights (weights/e3_model_state.pt) fine-tuned from the torchvision mvit_v1_b Kinetics-400 checkpoint.
+The Apache-2.0 licence in LICENSE applies to the source code of this repository only; see RIGHTS_AND_RELEASE.md for the weights.
